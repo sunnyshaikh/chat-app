@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsla(246,91%,70%,1);
+  border-radius: 10px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  background-image:#da99ff;background-image:  
+radial-gradient(at 96% 97%, hsla(23,80%,63%,1) 0, transparent 54%),  
+radial-gradient(at 81% 77%, hsla(204,86%,74%,1) 0, transparent 46%),  
+radial-gradient(at 63% 3%, hsla(188,93%,66%,1) 0, transparent 44%),  
+radial-gradient(at 44% 3%, hsla(271,87%,68%,1) 0, transparent 59%),  
+radial-gradient(at 34% 81%, hsla(215,66%,74%,1) 0, transparent 42%),  
+radial-gradient(at 93% 38%, hsla(241,92%,77%,1) 0, transparent 41%),  
+radial-gradient(at 1% 59%, hsla(246,91%,70%,1) 0, transparent 52%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.4);
+  width: 768px;
+  max-width: 100%;
+  height: 600px;
+  /* max-height: 100vh; */
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+  box-shadow: 4px 8px 32px rgba(0,0,0,.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid hsla(241,92%,77%,0.35);
+  padding: 1rem 0;
+}
+
+.title {
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.new-user {
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0.5;
+}
+
+/* message container */
+.message__container {
+  padding: 0.5rem;
+  position: relative;
+  overflow-y: auto;
+}
+
+.message {
+  width: fit-content;
+  max-width: 300px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  margin: 0.25rem 0;
+}
+
+.message h4 {
+  text-align: right;
+  font-size: .85rem;
+  opacity: 0.6;
+}
+
+.message.incoming {
+  background: hsla(246,91%,70%,1);
+  border-bottom-left-radius: 0;
+  color: #fff;
+}
+
+.message.outgoing {
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom-right-radius: 0;
+  margin-left: auto;
+}
+
+
+/* form */
+form {
+  margin-top: auto;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0.75rem 0;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0 0.5rem;
+  border: 0;
+  outline: 0;
+  background: none;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
